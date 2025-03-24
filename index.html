@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>from valiadtion</title>
+    <link rel="stylesheet" href="./styel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./app.js"defer></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>👉registration form👈</h2>
+        <form action="" id="form">
+            <div class="form-group">
+                <label for="name">Full Name <i class="fa-solid fa-user"></i></label>
+                <input type="text" placeholder="Enter your full name" id="name">
+                <span class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address <i class="fa-solid fa-envelope"></i></label>
+                <input type="email" placeholder="Enter your Email" id="email">
+                <span class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact Number <i class="fa-solid fa-address-book"></i></label>
+                <input type="text" placeholder="Enter your contact" id="contact">
+                <span class="error"></span>
+            </div>
+            <div class="form-group">
+                <div class="form-group">
+                    <label for="password">Password <i class="fa-solid fa-lock"></i></label>
+                    <div class="password-container">
+                        <input type="password" placeholder="create a password" name="" id="password">
+                        <button type="button" id="togglePassword" class="toggle-password">👁️</button>
+                        <span class="error"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Confirm Password <i class="fa-solid fa-unlock"></i></label>
+                <div class="password-container">
+                    <input type="text" placeholder="confirm your password" name="" id="confirmpassword">
+                    <button type="button" id="togglePasswordconfirm" class="toggle-password">👁️</button>
+                    <span class="error"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="city">City <i class="fa-solid fa-city"></i></label>
+                <input type="text" placeholder="Enter your city" id="city">
+                <span class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="country">Country <i class="fa-solid fa-earth-americas"></i></label>
+                <input type="text" placeholder="Enter your country" id="country">
+                <span class="error"></span>
+            </div>
+            <div class="auth-buttons">
+                <button class="signup" type="submit">Submit</button>
+                <p id="successMassage" class="success"></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
